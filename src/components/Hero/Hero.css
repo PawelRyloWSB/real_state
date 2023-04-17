@@ -1,0 +1,59 @@
+.hero-wrapper {
+    padding-bottom: 2rem;
+    position: relative;
+    background: var(--gray);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(111, 77, 18, 0.3)), url(https://cdn.discordapp.com/attachments/992890843851661442/1089951407152574604/MattJack_gold_symmetrical_lines_pattern_black_background_sharp__514526a2-9e65-4f26-8272-156d42d4ce7c.png);
+    background-repeat: repeat;
+}
+
+.hero-wrapper .hero-container {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* left section */
+.hero-left {
+    gap: 3rem;
+}
+
+.hero-title {
+    text-shadow: 0px 1px 10px rgb(251, 251, 123);
+    position: relative;
+    z-index: 1;
+}
+
+.hero-circle {
+    position: absolute;
+    background: var(--green-gradient);
+    width: 5rem;
+    height: 5rem;
+    box-shadow: inset -7px 6px 30px rgb(158, 63, 93);
+    border-radius: 100px;
+    z-index: -1;
+    right: 275px;
+    top: -30px;
+}
+
+.hero-title>h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 5rem;
+}
+
+.hero-description {}
+
+/* right section */
+.image-container {
+    width: 30rem;
+    height: 35rem;
+    overflow: hidden;
+    border-radius: 10rem 4px 10rem 4px;
+    border: 0px solid black;
+    box-shadow: 5px 2.5px 7px rgb(80, 80, 80);
+}
+
+.image-container>img {
+    width: 150%;
+    object-position: 0 -60px;
+
+}
