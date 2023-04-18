@@ -30,7 +30,7 @@
     box-shadow: inset -7px 6px 30px rgb(158, 63, 93);
     border-radius: 100px;
     z-index: -1;
-    right: 275px;
+    left: 12rem;
     top: -30px;
 }
 
@@ -41,6 +41,30 @@
 }
 
 .hero-description {}
+
+.hero-action-section {}
+
+.hero-action-section>button {
+    padding: 0.6rem 3.5rem;
+}
+
+.hero-left .stats {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.stat>:nth-child(1) {
+    font-size: 2rem;
+}
+
+.stat>:nth-child(1)>:last-child {
+    color: var(--orange);
+    margin-left: 0.1rem;
+}
+
+.stat>:nth-child(2) {
+    color: gray;
+}
 
 /* right section */
 .image-container {
