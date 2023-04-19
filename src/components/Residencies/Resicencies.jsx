@@ -12,16 +12,19 @@ export default function Residencies() {
                     <span className="small-head-span">Best Choices</span>
                     <span className="big-head-span">Popular Residencies</span>
                 </div>
-                <Swiper>
+                <Swiper >
                     {
                         data.map((card, i) => (
-                            <SwiperSlide key={i}>
-                                <div className="res-card">
+                            <SwiperSlide key={i} >
+                                <div className="res-card flexColStart">
                                     <img src={card.image} alt="house" />
 
                                     <span className="secondaryText res-price">
-                                        <span>$</span><span>{card.price}</span>
+                                        <span style={{ color: "orangered" }}>$</span><span>{card.price}</span>
                                     </span>
+
+                                    <span className="big-head-span card-name">{card.name}</span>
+                                    <span className="card-detail">{card.detail}</span>
                                 </div>
                             </SwiperSlide>
                         ))
