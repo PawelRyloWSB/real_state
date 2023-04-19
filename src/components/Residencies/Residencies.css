@@ -1,0 +1,10 @@
+.small-head-span {
+    color: var(--orange);
+    font-size: 1rem;
+}
+
+.big-head-span {
+    color: var(--secondary);
+    font-size: 2rem;
+    font-weight: 900;
+}

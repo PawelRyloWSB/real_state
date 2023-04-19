@@ -1,12 +1,33 @@
 import React from "react";
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import 'swiper/css'
+import data from '../../utils/slider.json'
 import './Residencies.css'
 
 export default function Residencies() {
     return (
-        <div className="temporal">
+        <section className="res-wrapper">
+            <div className="paddings innerWidth res-container">
+                <div className="res-head flexColStart">
+                    <span className="small-head-span">Best Choices</span>
+                    <span className="big-head-span">Popular Residencies</span>
+                </div>
+                <Swiper>
+                    {
+                        data.map((card, i) => (
+                            <SwiperSlide key={i}>
+                                <div className="res-card">
+                                    <img src={card.image} alt="house" />
 
-        </div>
+                                    <span className="secondaryText res-price">
+                                        <span>$</span><span>{card.price}</span>
+                                    </span>
+                                </div>
+                            </SwiperSlide>
+                        ))
+                    }
+                </Swiper>
+            </div>
+        </section>
     )
 }
