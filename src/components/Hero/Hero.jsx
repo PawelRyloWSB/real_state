@@ -16,8 +16,9 @@ export default function Hero() {
                     </div>
                     {/* Description */}
                     <div className="flexColStart hero-description">
-                        <span>Discover Next-Gen Homes for a Technologically Advanced Lifestyle!</span>
-                        <span>Welcome to Tomorrow's Living: Cutting-Edge Real Estate for a Futuristic Lifestyle!</span>
+                        <span>Discover Next-Gen Homes <br />
+                            for a Technologically Advanced Lifestyle.</span>
+
                     </div>
                     {/* Explore Button */}
                     <div className="flexColStart hero-action-section">

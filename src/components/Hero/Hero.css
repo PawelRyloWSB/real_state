@@ -40,9 +40,9 @@
     line-height: 5rem;
 }
 
-.hero-description {}
-
-.hero-action-section {}
+.hero-description {
+    font-style: italic;
+}
 
 .hero-action-section>button {
     padding: 0.6rem 3.5rem;
