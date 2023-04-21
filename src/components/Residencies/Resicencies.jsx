@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import 'swiper/css'
 import data from '../../utils/slider.json'
+import { sliderSettings } from "../../utils/common";
 import './Residencies.css'
 
 export default function Residencies() {
@@ -12,7 +13,7 @@ export default function Residencies() {
                     <span className="small-head-span">Best Choices</span>
                     <span className="big-head-span">Popular Residencies</span>
                 </div>
-                <Swiper >
+                <Swiper {...sliderSettings}>
                     {
                         data.map((card, i) => (
                             <SwiperSlide key={i} >
