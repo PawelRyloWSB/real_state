@@ -4,6 +4,11 @@
 
 .res-container {
     overflow: hidden;
+    position: relative;
+}
+
+.res-head {
+    margin-bottom: 2rem;
 }
 
 .small-head-span {
@@ -23,7 +28,7 @@
     background-color: white;
     border-radius: 10px;
     margin: auto;
-    max-width: 17rem;
+    max-width: 14rem;
     transition: all 300ms ease-in;
 }
 
@@ -54,4 +59,28 @@
 
 .swiper-horizontal {
     overflow: visible;
+}
+
+div .res-button {
+    position: absolute;
+    top: -4rem;
+    right: 2rem;
+    z-index: 123;
+}
+
+.res-button>button {
+    padding: .8rem 0.6rem;
+    background: var(--yellow);
+    border-radius: 5px;
+    border: 2px solid var(--gray);
+    font-size: 1.2rem;
+    color: var(--black);
+}
+
+.res-button>button:hover {
+    cursor: pointer;
+}
+
+.res-button>button:active {
+    background-color: var(--orange);
 }
